@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": { "title": "SENASoft Metrics API", "version": "2.0.0" },
   "servers": [
-    { "url": "https://senasoft-core-dev-h2erabc0hhbcg7ee.eastus2-01.azurewebsites.net" }
+    { "url": "https://leonardo-reparado.onrender.com" }
   ],
   "paths": {
     "/metrics/scalar": {
