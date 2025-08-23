@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Leonardo API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/leonardo": {
+      "get": {
+        "summary": "Consulta métricas de SENASoft según la pregunta (1–6)",
+        "parameters": [
+          {
+            "name": "pregunta",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["1", "2", "3", "4", "5", "6"]
+            },
+            "description": "Número de pregunta (1–6)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resultado de la consulta",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
