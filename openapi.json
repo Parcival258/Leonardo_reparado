@@ -6,13 +6,13 @@
   },
   "servers": [
     {
-      "url": "http://localhost:8080",
-      "description": "Servidor local"
+      "url": "https://leonardo-reparado.onrender.com"
     }
   ],
   "paths": {
     "/leonardo": {
       "get": {
+        "operationId": "consultarMetricasSENAsoft",
         "summary": "Consulta métricas de SENAsoft según la pregunta (1-6)",
         "parameters": [
           {
